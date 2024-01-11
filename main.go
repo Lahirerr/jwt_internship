@@ -165,7 +165,7 @@ func main() {
 	}
 
 	// Migrate the schema
-	db.AutoMigrate(&models.Users{}, &models.Posts{})
+	// db.AutoMigrate(&models.Users{}, &models.Posts{})
 
 	router := gin.Default()
 	router.Use(cors.Default())
